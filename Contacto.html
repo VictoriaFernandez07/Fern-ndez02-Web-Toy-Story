@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Toy-Story</title>
+        <link href="estilos.css" rel="stylesheet" type="text/css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    </head>
+
+    <body>
+     <!--Cursor-->
+     <div id="trail"></div>
+     <script src="index.js"></script>
+
+        <header>
+         <!--Logo-->
+            <nav class="navbar navbar-expand-navbar bg-body-tertiary">
+                <div class="Logo-Toy-Story">
+                    <a class="navbar-brand" href="Index.html">
+                        <img src="Imágenes/Logo-Toy-Story.png" class="rounded" alt="Bootstrap" width="150" height="120">
+                    </a>
+                </div>
+
+             <!--Estilos-Responsive-Logo-->
+                <style>
+                    .Logo-Toy-Story img {
+                     max-width: 150px; /* Asegura que el logotipo no sea más ancho que su contenedor */
+                     height: auto;
+                     margin-top: -30%;
+                    }
+
+                    @media (max-width: 768px) {
+                        .Logo-Toy-Story img {
+                         width: 100%; /* Reducir el tamaño del logotipo en pantallas más pequeñas */
+                         margin-top: -100%;
+                        }
+                    }
+                </style>
+
+             <!--Secciones-->
+                <div class="secciones">
+                    <div class="col-sm-4"><a href="Niños-niñas.html"><p>Niños/niñas</p></a></div>
+                    <div class="col-sm-4"><a href="Adolescentes.html"><p>Adolescentes</p></a></div>
+                    <div class="col-sm-4"><a href="Contacto.html"><p>Contacto</p></a></div>
+                </div> 
+
+             <!--Estilos-Responsive-Secciones-->
+                <style>
+                    .secciones{
+                        display: flex; 
+                        justify-content: space-around; 
+                        padding: 10px;
+                        margin-top: 20%;
+                    }
+
+                    .secciones a{
+                      text-decoration: none;
+                      color: black;
+                      font-size: 30px;
+                      text-align: center;
+                    }
+
+                    .secciones p{
+                        padding-right: 30px;
+                    }
+ 
+                    @media screen and (max-width: 768px) {
+                        .secciones{
+                          display: block; /* Hacer que los elementos de la barra de navegación se muestren como una lista (verticalmente) */
+                          margin-top: 35%;
+                          margin-left: 35%;
+                        }
+
+                        .secciones a{
+                          margin-bottom: 10px; /* Espacio entre elementos de la barra de navegación en forma de lista */
+                          font-size: 20px;
+                        }
+                    }
+                </style>
+                
+             <!--Carrito-Compras--> 
+                <div class="carrito-compras">
+                 <img src="Imágenes/Carrito-de-compras.png" class="rounded float-end mx-5" alt="Bootstrap" width="50" height="60">
+                </div>
+            </nav>
+        </header>
+
+     <!--Estilos-Responsive-Carrito-Compras--> 
+        <style>
+            .Carrito-de-compras {
+             max-width: 80%; 
+             height: auto; 
+            }
+
+            .carrito-compras img {
+             margin-top: 170%;
+            }
+                
+            @media (max-width: 768px) {
+                .Carrito-de-compras {
+                 width: 10%;
+                 height: 30%; 
+                 margin-top: 20%;
+                }
+
+                .carrito-compras img {
+                 width: 5%;
+                 height: 30%;
+                 margin-top: 3%;
+                 margin-right: 35%;
+                 transform: translate(-750%, -100%);
+                }
+            }
+        </style>
+
+        <div class="Contacto">
+            <h4>Contacto</h4>
+        </div>
+
+     <!--Estilos-Responsive-Texto--> 
+        <style>
+            .Contacto{
+             font-family: 'Rubik', sans-serif;
+             text-align: center;
+             margin-top: 15px;
+             font-weight: bold;
+             color: black; 
+             font-size: 24px;
+            }
+
+            @media (max-width: 768px) {
+                .Contacto {
+                  font-size: 14px; 
+                  margin-top: 10%;
+                  margin: 0;
+                }
+            }
+        </style>
+
+     <!--Formulario--> 
+        <form> 
+         <label for="name">Nombre</label>
+         <input type="text" name="nombre" id="name" placeholder="Nombre" required>
+         <label for="last-name">Apellido</label>
+         <input type="text" name="apellido" id="last-name" placeholder="Apellido"required>
+         <label for="email"> Correo electrónico</label>
+         <input type="text" name="email" id="correo-electrónico" placeholder="Correo electrónico"> 
+         <label for="aunto-email">Asunto</label>
+         <input type="text" name="asunto-email" id="asunto-email" placeholder="Asunto"> 
+         <label for="texto">Mensaje</label>
+         <input type="text" name="mensaje" id="mensaje-email" placeholder="Tu mensaje"> 
+         <button type="enviar"> Enviar </button>
+        </form>
+
+     <!--Footer-->
+        <div class="footer">
+            <footer>
+             <p class="dirección">Av. Scalabrini Ortiz 1901, Capital Federal.</p>
+             <p class="horario">Horarios. Lunes a Sábados de 10 a 20hs.</p>
+             <p class="telefono"> Tel.(011) 15 6639 5200</p>
+             <p class="email">Hola@toystory.com.ar</p>
+             <p class="copyright">©2023copyrighttoystory</p>
+            </footer>
+        </div>
+    </body>
+</html>
